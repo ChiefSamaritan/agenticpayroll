@@ -1,0 +1,288 @@
+[
+  {
+    "employee": {
+      "tenant_id": "usa-tenant",
+      "employee_id": "emp-us-001",
+      "country": "USA",
+      "gross_salary": 85000,
+      "hourly_rate": 45,
+      "hours_worked": 160,
+      "overtime_hours": 15,
+      "bonuses": 3000,
+      "allowances": {
+        "internet_reimbursement": 120,
+        "remote_work_allowance": 100,
+        "meal_allowance": 250
+      },
+      "tax_exempt_allowances": ["internet_reimbursement", "remote_work_allowance"],
+      "benefits_opt_in": {
+        "private_pension": true,
+        "health_insurance_top_up": true
+      },
+      "metadata": {
+        "full_name": "Alice Johnson",
+        "job_title": "Software Engineer",
+        "department": "Engineering",
+        "tax_id": "US123456789",
+        "bank_account_last4": "7890"
+      }
+    },
+    "company": {
+      "company_name": "TechNova Inc.",
+      "address": "123 Silicon Valley Blvd, California, USA"
+    }
+  },
+  {
+    "employee": {
+      "tenant_id": "canada-tenant",
+      "employee_id": "emp-ca-001",
+      "country": "Canada",
+      "gross_salary": 95000,
+      "hourly_rate": 50,
+      "hours_worked": 160,
+      "overtime_hours": 5,
+      "bonuses": 5000,
+      "allowances": {
+        "housing": 1200,
+        "internet_reimbursement": 100,
+        "professional_development_allowance": 300
+      },
+      "tax_exempt_allowances": ["internet_reimbursement", "professional_development_allowance"],
+      "benefits_opt_in": {
+        "private_pension": true,
+        "RRSP": true,
+        "health_insurance_top_up": true,
+        "union_dues": true
+      },
+      "metadata": {
+        "full_name": "Bob Smith",
+        "job_title": "Senior Developer",
+        "department": "IT",
+        "tax_id": "CA987654321",
+        "bank_account_last4": "4567"
+      }
+    },
+    "company": {
+      "company_name": "MapleTech Solutions",
+      "address": "500 Bay Street, Toronto, Canada"
+    }
+  },
+  {
+    "employee": {
+      "tenant_id": "philippines-tenant",
+      "employee_id": "emp-ph-001",
+      "country": "Philippines",
+      "gross_salary": 700000,
+      "hourly_rate": 350,
+      "hours_worked": 160,
+      "overtime_hours": 8,
+      "bonuses": 20000,
+      "allowances": {
+        "transport": 1000,
+        "meal_allowance": 500
+      },
+      "tax_exempt_allowances": ["transport"],
+      "benefits_opt_in": {
+        "health_insurance_top_up": true
+      },
+      "metadata": {
+        "full_name": "Carlos Dela Cruz",
+        "job_title": "Accountant",
+        "department": "Finance",
+        "tax_id": "PH1122334455",
+        "bank_account_last4": "1234"
+      }
+    },
+    "company": {
+      "company_name": "IslandsCorp",
+      "address": "Ayala Avenue, Makati City, Philippines"
+    }
+  },
+  {
+    "employee": {
+      "tenant_id": "colombia-tenant",
+      "employee_id": "emp-co-001",
+      "country": "Colombia",
+      "gross_salary": 2400000,
+      "hourly_rate": 12000,
+      "hours_worked": 160,
+      "overtime_hours": 12,
+      "bonuses": 300000,
+      "allowances": {
+        "transport": 140000
+      },
+      "tax_exempt_allowances": ["transport"],
+      "benefits_opt_in": {},
+      "metadata": {
+        "full_name": "Daniela Gomez",
+        "job_title": "Operations Manager",
+        "department": "Operations",
+        "tax_id": "CO9988776655",
+        "bank_account_last4": "5678"
+      }
+    },
+    "company": {
+      "company_name": "Andes Logistics",
+      "address": "Carrera 7, Bogotá, Colombia"
+    }
+  },
+  {
+    "employee": {
+      "tenant_id": "india-tenant",
+      "employee_id": "emp-in-001",
+      "country": "India",
+      "gross_salary": 900000,
+      "hourly_rate": 500,
+      "hours_worked": 160,
+      "overtime_hours": 10,
+      "bonuses": 20000,
+      "allowances": {
+        "housing": 12000,
+        "transport": 1800,
+        "meal_allowance": 1500,
+        "internet_reimbursement": 800
+      },
+      "tax_exempt_allowances": ["housing", "transport"],
+      "benefits_opt_in": {
+        "private_pension": true,
+        "health_insurance_top_up": true,
+        "meal_subsidy": true
+      },
+      "metadata": {
+        "full_name": "Rajesh Kumar",
+        "job_title": "Project Manager",
+        "department": "Technology",
+        "tax_id": "IN1234567890",
+        "bank_account_last4": "6543"
+      }
+    },
+    "company": {
+      "company_name": "Bharat Solutions",
+      "address": "MG Road, Bengaluru, India"
+    }
+  },
+  {
+    "employee": {
+      "tenant_id": "spain-tenant",
+      "employee_id": "emp-es-001",
+      "country": "Spain",
+      "gross_salary": 45000,
+      "hourly_rate": 24,
+      "hours_worked": 160,
+      "overtime_hours": 10,
+      "bonuses": 2000,
+      "allowances": {
+        "transport": 150,
+        "meal_allowance": 300
+      },
+      "tax_exempt_allowances": ["meal_allowance"],
+      "benefits_opt_in": {
+        "private_pension": true
+      },
+      "metadata": {
+        "full_name": "Lucia Martinez",
+        "job_title": "HR Manager",
+        "department": "Human Resources",
+        "tax_id": "ES5566778899",
+        "bank_account_last4": "7894"
+      }
+    },
+    "company": {
+      "company_name": "Iberia HR Services",
+      "address": "Calle Gran Vía, Madrid, Spain"
+    }
+  },
+  {
+    "employee": {
+      "tenant_id": "ireland-tenant",
+      "employee_id": "emp-ie-001",
+      "country": "Ireland",
+      "gross_salary": 60000,
+      "hourly_rate": 30,
+      "hours_worked": 160,
+      "overtime_hours": 5,
+      "bonuses": 3000,
+      "allowances": {
+        "meal_allowance": 250,
+        "internet_reimbursement": 90
+      },
+      "tax_exempt_allowances": ["internet_reimbursement"],
+      "benefits_opt_in": {
+        "private_pension": true,
+        "health_insurance_top_up": true
+      },
+      "metadata": {
+        "full_name": "Patrick O'Connor",
+        "job_title": "Data Analyst",
+        "department": "Analytics",
+        "tax_id": "IE9988776655",
+        "bank_account_last4": "3210"
+      }
+    },
+    "company": {
+      "company_name": "Dublin Data Systems",
+      "address": "Pearse Street, Dublin, Ireland"
+    }
+  },
+  {
+    "employee": {
+      "tenant_id": "ecuador-tenant",
+      "employee_id": "emp-ec-001",
+      "country": "Ecuador",
+      "gross_salary": 18000,
+      "hourly_rate": 10,
+      "hours_worked": 160,
+      "overtime_hours": 10,
+      "bonuses": 800,
+      "allowances": {
+        "transport_allowance": 100,
+        "internet_reimbursement": 50
+      },
+      "tax_exempt_allowances": ["transport_allowance"],
+      "benefits_opt_in": {
+        "transport_allowance": true
+      },
+      "metadata": {
+        "full_name": "Carlos Mendez",
+        "job_title": "Support Engineer",
+        "department": "Customer Success",
+        "tax_id": "EC123456789",
+        "bank_account_last4": "1122"
+      }
+    },
+    "company": {
+      "company_name": "AndesCloud Ltd.",
+      "address": "Av. Amazonas N37-45, Quito, Ecuador"
+    }
+  },
+  {
+    "employee": {
+      "tenant_id": "bolivia-tenant",
+      "employee_id": "emp-bo-001",
+      "country": "Bolivia",
+      "gross_salary": 14400,
+      "hourly_rate": 8,
+      "hours_worked": 160,
+      "overtime_hours": 12,
+      "bonuses": 1000,
+      "allowances": {
+        "meal_allowance": 150
+      },
+      "tax_exempt_allowances": ["meal_allowance"],
+      "benefits_opt_in": {
+        "meal_allowance": true
+      },
+      "metadata": {
+        "full_name": "Lucía Quispe",
+        "job_title": "Finance Analyst",
+        "department": "Accounting",
+        "tax_id": "BO654321987",
+        "bank_account_last4": "9988"
+      }
+    },
+    "company": {
+      "company_name": "Altiplano Analytics",
+      "address": "Calle Comercio 123, La Paz, Bolivia"
+    }
+  }
+]
