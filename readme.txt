@@ -43,10 +43,6 @@ Perfect! Here’s a concise and professional Payroll Glossary Table — great fo
 Run doucmentation for this Prototype
 
 
- uvicorn app.main:app --reload
-
-the runner
-pytest tests/test_bundle.py
 
 AgenticPayroll/
 │
@@ -107,3 +103,14 @@ tests/              | Unit and API tests
 payslips/           | Folder to save the generated PDF files
 .env                | Your secrets: database URL, API keys
 requirements.txt    | Python packages (FastAPI, SQLAlchemy, etc.)
+
+
+Steps to run the prototype app
+
+1. Start the api listern service 
+
+ uvicorn app.main:app --reload
+
+2. open 2nd terminal and run the test scripts
+
+pytest tests/test_bundle.py   
