@@ -19,7 +19,8 @@ class BenefitsOptIn(BaseModel):
     meal_subsidy: Optional[bool] = False
 
 class Employee(BaseModel):
-    tenant_id: str
+    tenant_id: int
+    #tenant_id: str
     employee_id: str
     country: str
     gross_salary: float

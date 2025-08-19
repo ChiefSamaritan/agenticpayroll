@@ -3,6 +3,11 @@ def calculate_country_specific_benefits(
     config: dict,
     opted_in_benefits: list = None
 ):
+    """ Optional benefits are deductions or contributions — amounts the employee agrees to pay for extra perks 
+    -   (e.g., private medical, gym membership, retirement plan top-up).
+    -   Employee contributions reduce net pay and are stored in employee.benefits_opt_in (or whatever field you’ve defined)
+	-	Optional benefits → reduce net pay and are stored in employee.benefits_opt_in (or whatever field you’ve defined)
+    """
     employee_deductions = {}
     employer_contributions = {}
 

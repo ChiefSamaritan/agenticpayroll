@@ -1,0 +1,37 @@
+[
+  {
+    "employee": {
+      "tenant_id": "1",
+      "employee_id": "emp-si-001",
+      "country": "Solomon Islands",
+      "hourly_rate": 15.0,
+      "hours_worked": 160,
+      "overtime_hours": 10,
+      "bonuses": 500,
+      "gross_salary": 2400,
+      "allowances": {
+        "transport_subsidy": 200,
+        "housing_allowance": 500,
+        "health_top_up": 150
+      },
+      "benefits_opt_in": {
+        "transport_subsidy": true,
+        "housing_allowance": true,
+        "health_top_up": false
+      },
+      "metadata": {
+        "full_name": "John Keni",
+        "job_title": "Marine Engineer",
+        "department": "Operations",
+        "tax_id": "SI12345678",
+        "bank_account_last4": "5678",
+        "hire_date": "2020-06-15",
+        "date_of_birth": "1985-03-20"
+      }
+    },
+    "company": {
+      "company_name": "Pacific Shipping Ltd",
+      "address": "Mendana Avenue, Honiara, Solomon Islands"
+    }
+  }
+]

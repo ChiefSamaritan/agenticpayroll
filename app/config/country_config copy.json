@@ -1,0 +1,882 @@
+{
+	"Solomon Islands": {
+		"currency": "SBD",
+		"currency_symbol": "$",
+		"timezone": "Pacific/Guadalcanal",
+		"date_format": "DD/MM/YYYY",
+		"pay_frequency": "monthly",
+		"payroll_cutoff_day": 25,
+		"public_holidays": "API_INTEGRATED",
+		"income_tax_brackets": [
+			{
+				"up_to": 15600,
+				"rate": 0
+			},
+			{
+				"up_to": 30000,
+				"rate": 0.11
+			},
+			{
+				"up_to": 60000,
+				"rate": 0.23
+			},
+			{
+				"up_to": null,
+				"rate": 0.35
+			}
+		],
+		"social_security_rate": 0.05,
+		"health_insurance_rate": 0,
+		"solidarity_fund_rate": 0,
+		"transport_allowance_threshold": 0,
+		"mandatory_bonuses": false,
+		"electronic_reporting_required": false,
+		"employer_contributions": {
+			"social_security_employer": 0.075,
+			"health_insurance_employer": 0,
+			"occupational_risk_employer": 0,
+			"family_compensation_fund": 0,
+			"icbf": 0,
+			"sena": 0
+		},
+		"country_specific_benefits": [
+			{
+				"name": "NPF",
+				"description": "National Provident Fund retirement savings",
+				"employee_rate": 0.05,
+				"employer_rate": 0.075
+			}
+		],
+		"benefits_opt_in_options": {
+			"housing_allowance": {
+				"employee_fixed": 100,
+				"pre_tax": false
+			},
+			"health_top_up": {
+				"employee_fixed": 60,
+				"employer_fixed": 60
+			},
+			"transport_subsidy": {
+				"employee_fixed": 40,
+				"pre_tax": true
+			}
+		},
+		"tax_exemptions": {
+			"NPF": {
+				"type": "percentage",
+				"rate": 0.05
+			}
+		}
+	},
+	"Papua New Guinea": {
+		"currency": "PGK",
+		"currency_symbol": "K",
+		"timezone": "Pacific/Port_Moresby",
+		"date_format": "DD/MM/YYYY",
+		"pay_frequency": "monthly",
+		"payroll_cutoff_day": 25,
+		"public_holidays": "API_INTEGRATED",
+		"income_tax_brackets": [
+			{
+				"up_to": 12500,
+				"rate": 0
+			},
+			{
+				"up_to": 20000,
+				"rate": 0.22
+			},
+			{
+				"up_to": 33000,
+				"rate": 0.3
+			},
+			{
+				"up_to": 70000,
+				"rate": 0.35
+			},
+			{
+				"up_to": null,
+				"rate": 0.4
+			}
+		],
+		"social_security_rate": 0.06,
+		"health_insurance_rate": 0,
+		"solidarity_fund_rate": 0,
+		"transport_allowance_threshold": 0,
+		"mandatory_bonuses": false,
+		"electronic_reporting_required": false,
+		"employer_contributions": {
+			"social_security_employer": 0.08,
+			"health_insurance_employer": 0,
+			"occupational_risk_employer": 0.01,
+			"family_compensation_fund": 0,
+			"icbf": 0,
+			"sena": 0
+		},
+		"country_specific_benefits": [
+			{
+				"name": "NASFUND",
+				"description": "Superannuation retirement fund",
+				"employee_rate": 0.06,
+				"employer_rate": 0.08
+			}
+		],
+		"benefits_opt_in_options": {
+			"voluntary_health_cover": {
+				"employee_fixed": 75,
+				"employer_fixed": 75
+			},
+			"commuting_allowance": {
+				"employee_fixed": 60,
+				"pre_tax": true
+			},
+			"education_allowance": {
+				"employee_fixed": 100,
+				"pre_tax": false
+			}
+		},
+		"tax_exemptions": {
+			"NASFUND": {
+				"type": "percentage",
+				"rate": 0.06
+			}
+		}
+	},
+	"Spain": {
+		"currency": "EUR",
+		"currency_symbol": "\u20ac",
+		"timezone": "Europe/Madrid",
+		"date_format": "DD/MM/YYYY",
+		"pay_frequency": "monthly",
+		"payroll_cutoff_day": 25,
+		"public_holidays": "API_INTEGRATED",
+		"income_tax_brackets": [
+			{
+				"up_to": 12450,
+				"rate": 0.19
+			},
+			{
+				"up_to": 20200,
+				"rate": 0.24
+			},
+			{
+				"up_to": 35200,
+				"rate": 0.3
+			},
+			{
+				"up_to": 60000,
+				"rate": 0.37
+			},
+			{
+				"up_to": 300000,
+				"rate": 0.45
+			},
+			{
+				"up_to": null,
+				"rate": 0.47
+			}
+		],
+		"social_security_rate": 0.0635,
+		"health_insurance_rate": 0,
+		"solidarity_fund_rate": 0,
+		"transport_allowance_threshold": 0,
+		"mandatory_bonuses": true,
+		"electronic_reporting_required": true,
+		"employer_contributions": {
+			"social_security_employer": 0.23,
+			"health_insurance_employer": 0,
+			"occupational_risk_employer": 0.02,
+			"family_compensation_fund": 0,
+			"icbf": 0,
+			"sena": 0
+		},
+		"country_specific_benefits": [
+			{
+				"name": "Unemployment Insurance",
+				"description": "Employer contribution for unemployment benefits",
+				"employer_rate": 0.058,
+				"employee_rate": 0.0155
+			}
+		],
+		"benefits_opt_in_options": {
+			"private_pension": {
+				"employee_rate": 0.02,
+				"employer_rate": 0.02
+			},
+			"health_insurance_top_up": {
+				"employee_fixed": 90,
+				"employer_fixed": 90
+			},
+			"gym_membership": {
+				"employee_fixed": 30,
+				"pre_tax": false
+			},
+			"commuting_allowance": {
+				"employee_fixed": 50,
+				"pre_tax": true
+			}
+		},
+		"tax_exemptions": {
+			"Unemployment Insurance": {
+				"type": "percentage",
+				"rate": 0.0155
+			}
+		}
+	},
+	"Ireland": {
+		"currency": "EUR",
+		"currency_symbol": "\u20ac",
+		"timezone": "Europe/Dublin",
+		"date_format": "DD/MM/YYYY",
+		"pay_frequency": "monthly",
+		"payroll_cutoff_day": 20,
+		"public_holidays": "API_INTEGRATED",
+		"income_tax_brackets": [
+			{
+				"up_to": 0,
+				"rate": 0.2
+			},
+			{
+				"up_to": 36800,
+				"rate": 0.4
+			}
+		],
+		"social_security_rate": 0.04,
+		"health_insurance_rate": 0,
+		"solidarity_fund_rate": 0,
+		"transport_allowance_threshold": 0,
+		"mandatory_bonuses": false,
+		"electronic_reporting_required": true,
+		"employer_contributions": {
+			"social_security_employer": 0.1125,
+			"health_insurance_employer": 0,
+			"occupational_risk_employer": 0,
+			"family_compensation_fund": 0,
+			"icbf": 0,
+			"sena": 0
+		},
+		"country_specific_benefits": [
+			{
+				"name": "PRSI",
+				"description": "Pay Related Social Insurance",
+				"employee_rate": 0.04,
+				"employer_rate": 0.1125
+			}
+		],
+		"benefits_opt_in_options": {
+			"private_pension": {
+				"employee_rate": 0.02,
+				"employer_rate": 0.02
+			},
+			"health_insurance_top_up": {
+				"employee_fixed": 90,
+				"employer_fixed": 90
+			},
+			"commuting_allowance": {
+				"employee_fixed": 60,
+				"pre_tax": true
+			},
+			"union_dues": {
+				"employee_fixed": 15,
+				"pre_tax": false
+			}
+		},
+		"tax_exemptions": {
+			"PRSI": {
+				"type": "percentage",
+				"rate": 0.04
+			}
+		}
+	},
+	"USA": {
+		"currency": "USD",
+		"currency_symbol": "$",
+		"timezone": "America/New_York",
+		"date_format": "MM/DD/YYYY",
+		"pay_frequency": "bi-weekly",
+		"payroll_cutoff_day": 15,
+		"public_holidays": "API_INTEGRATED",
+		"income_tax_brackets": [
+			{
+				"up_to": 0,
+				"rate": 0.1
+			},
+			{
+				"up_to": 11000,
+				"rate": 0.12
+			},
+			{
+				"up_to": 44725,
+				"rate": 0.22
+			},
+			{
+				"up_to": 95375,
+				"rate": 0.24
+			},
+			{
+				"up_to": 182100,
+				"rate": 0.32
+			},
+			{
+				"up_to": 231250,
+				"rate": 0.35
+			},
+			{
+				"up_to": 578125,
+				"rate": 0.37
+			}
+		],
+		"social_security_rate": 0.062,
+		"health_insurance_rate": 0.0145,
+		"solidarity_fund_rate": 0,
+		"transport_allowance_threshold": 0,
+		"mandatory_bonuses": false,
+		"electronic_reporting_required": false,
+		"employer_contributions": {
+			"social_security_employer": 0.062,
+			"health_insurance_employer": 0.0145,
+			"occupational_risk_employer": 0,
+			"family_compensation_fund": 0,
+			"icbf": 0,
+			"sena": 0
+		},
+		"country_specific_benefits": [
+			{
+				"name": "Medicare",
+				"description": "Federal health insurance program",
+				"employee_rate": 0.0145,
+				"employer_rate": 0.0145
+			},
+			{
+				"name": "FUTA",
+				"description": "Federal Unemployment Tax Act",
+				"employer_rate": 0.006
+			},
+			{
+				"name": "SUTA",
+				"description": "State Unemployment Tax Act",
+				"employer_rate": 0.05
+			}
+		],
+		"benefits_opt_in_options": {
+			"private_pension": {
+				"employee_rate": 0.03,
+				"employer_rate": 0.03
+			},
+			"health_insurance_top_up": {
+				"employee_fixed": 100,
+				"employer_fixed": 100
+			},
+			"401k": {
+				"employee_rate": 0.05,
+				"pre_tax": true
+			},
+			"HSA": {
+				"employee_fixed": 250,
+				"pre_tax": true
+			},
+			"commuting_allowance": {
+				"employee_fixed": 75,
+				"pre_tax": true
+			}
+		},
+		"tax_exemptions": {
+			"401k": {
+				"type": "percentage",
+				"rate": 0.05
+			},
+			"HSA": {
+				"type": "fixed",
+				"amount": 3000
+			}
+		}
+	},
+	"Colombia": {
+		"currency": "COP",
+		"currency_symbol": "$",
+		"timezone": "America/Bogota",
+		"date_format": "DD/MM/YYYY",
+		"pay_frequency": "monthly",
+		"payroll_cutoff_day": 25,
+		"public_holidays": "API_INTEGRATED",
+		"income_tax_brackets": [
+			{
+				"up_to": 0,
+				"rate": 0
+			},
+			{
+				"up_to": 4100000,
+				"rate": 0.19
+			},
+			{
+				"up_to": 8000000,
+				"rate": 0.28
+			},
+			{
+				"up_to": 18000000,
+				"rate": 0.33
+			}
+		],
+		"social_security_rate": 0.04,
+		"health_insurance_rate": 0.04,
+		"solidarity_fund_rate": 0.01,
+		"transport_allowance_threshold": 2600000,
+		"mandatory_bonuses": true,
+		"electronic_reporting_required": true,
+		"employer_contributions": {
+			"social_security_employer": 0.12,
+			"health_insurance_employer": 0.085,
+			"occupational_risk_employer": 0.00522,
+			"family_compensation_fund": 0.04,
+			"icbf": 0.03,
+			"sena": 0.02
+		},
+		"country_specific_benefits": [],
+		"benefits_opt_in_options": {
+			"private_pension": {
+				"employee_rate": 0.02,
+				"employer_rate": 0.02
+			},
+			"health_insurance_top_up": {
+				"employee_fixed": 100000,
+				"employer_fixed": 100000
+			},
+			"commuting_allowance": {
+				"employee_fixed": 80000,
+				"pre_tax": true
+			}
+		},
+		"tax_exemptions": {
+			"Solidarity Fund": {
+				"type": "percentage",
+				"rate": 0.01
+			}
+		}
+	},
+	"Canada": {
+		"currency": "CAD",
+		"currency_symbol": "$",
+		"timezone": "America/Toronto",
+		"date_format": "YYYY-MM-DD",
+		"pay_frequency": "bi-weekly",
+		"payroll_cutoff_day": 15,
+		"public_holidays": "API_INTEGRATED",
+		"income_tax_brackets": [
+			{
+				"up_to": 0,
+				"rate": 0.15
+			},
+			{
+				"up_to": 53359,
+				"rate": 0.205
+			},
+			{
+				"up_to": 106717,
+				"rate": 0.26
+			},
+			{
+				"up_to": 165430,
+				"rate": 0.29
+			}
+		],
+		"social_security_rate": 0.0545,
+		"health_insurance_rate": 0,
+		"solidarity_fund_rate": 0,
+		"transport_allowance_threshold": 0,
+		"mandatory_bonuses": false,
+		"electronic_reporting_required": true,
+		"employer_contributions": {
+			"social_security_employer": 0.0545,
+			"health_insurance_employer": 0,
+			"occupational_risk_employer": 0.0145,
+			"family_compensation_fund": 0,
+			"icbf": 0,
+			"sena": 0
+		},
+		"country_specific_benefits": [
+			{
+				"name": "CPP",
+				"description": "Canada Pension Plan",
+				"employee_rate": 0.0595,
+				"employer_rate": 0.0595
+			},
+			{
+				"name": "EI",
+				"description": "Employment Insurance",
+				"employee_rate": 0.0163,
+				"employer_rate": 0.0228
+			}
+		],
+		"benefits_opt_in_options": {
+			"private_pension": {
+				"employee_rate": 0.03,
+				"employer_rate": 0.03
+			},
+			"health_insurance_top_up": {
+				"employee_fixed": 100,
+				"employer_fixed": 100
+			},
+			"RRSP": {
+				"employee_rate": 0.04,
+				"pre_tax": true
+			},
+			"union_dues": {
+				"employee_fixed": 20,
+				"pre_tax": false
+			}
+		},
+		"tax_exemptions": {
+			"CPP": {
+				"type": "percentage",
+				"rate": 0.0595
+			},
+			"EI": {
+				"type": "percentage",
+				"rate": 0.0163
+			}
+		}
+	},
+	"India": {
+		"currency": "INR",
+		"currency_symbol": "\u20b9",
+		"timezone": "Asia/Kolkata",
+		"date_format": "DD-MM-YYYY",
+		"pay_frequency": "monthly",
+		"payroll_cutoff_day": 25,
+		"public_holidays": "API_INTEGRATED",
+		"income_tax_brackets": [
+			{
+				"up_to": 0,
+				"rate": 0.05
+			},
+			{
+				"up_to": 500000,
+				"rate": 0.1
+			},
+			{
+				"up_to": 1000000,
+				"rate": 0.2
+			},
+			{
+				"up_to": 1500000,
+				"rate": 0.3
+			}
+		],
+		"social_security_rate": 0.12,
+		"health_insurance_rate": 0,
+		"solidarity_fund_rate": 0,
+		"transport_allowance_threshold": 0,
+		"mandatory_bonuses": true,
+		"electronic_reporting_required": true,
+		"employer_contributions": {
+			"social_security_employer": 0.1275,
+			"health_insurance_employer": 0,
+			"occupational_risk_employer": 0,
+			"family_compensation_fund": 0,
+			"icbf": 0,
+			"sena": 0
+		},
+		"country_specific_benefits": [
+			{
+				"name": "HRA",
+				"description": "House Rent Allowance",
+				"eligible": true,
+				"exemption_rule": "Based on salary and city of residence"
+			},
+			{
+				"name": "EPF",
+				"description": "Employee Provident Fund",
+				"employee_rate": 0.12,
+				"employer_rate": 0.12
+			}
+		],
+		"benefits_opt_in_options": {
+			"private_pension": {
+				"employee_rate": 0.04,
+				"employer_rate": 0.04
+			},
+			"health_insurance_top_up": {
+				"employee_fixed": 75,
+				"employer_fixed": 75
+			},
+			"meal_subsidy": {
+				"employee_fixed": 50,
+				"pre_tax": false
+			},
+			"NPS": {
+				"employee_rate": 0.1,
+				"pre_tax": true
+			}
+		},
+		"tax_exemptions": {
+			"HRA": {
+				"type": "fixed",
+				"amount": 50000
+			},
+			"EPF": {
+				"type": "percentage",
+				"rate": 0.12
+			}
+		}
+	},
+	"Philippines": {
+		"currency": "PHP",
+		"currency_symbol": "\u20b1",
+		"timezone": "Asia/Manila",
+		"date_format": "MM/DD/YYYY",
+		"pay_frequency": "semi-monthly",
+		"payroll_cutoff_day": 15,
+		"public_holidays": "API_INTEGRATED",
+		"income_tax_brackets": [
+			{
+				"up_to": 0,
+				"rate": 0
+			},
+			{
+				"up_to": 250000,
+				"rate": 0.2
+			},
+			{
+				"up_to": 400000,
+				"rate": 0.25
+			},
+			{
+				"up_to": 800000,
+				"rate": 0.3
+			},
+			{
+				"up_to": 2000000,
+				"rate": 0.32
+			}
+		],
+		"social_security_rate": 0.045,
+		"health_insurance_rate": 0.04,
+		"solidarity_fund_rate": 0,
+		"transport_allowance_threshold": 0,
+		"mandatory_bonuses": true,
+		"electronic_reporting_required": true,
+		"employer_contributions": {
+			"social_security_employer": 0.08,
+			"health_insurance_employer": 0.04,
+			"occupational_risk_employer": 0.002,
+			"family_compensation_fund": 0,
+			"icbf": 0,
+			"sena": 0
+		},
+		"country_specific_benefits": [
+			{
+				"name": "Pag-IBIG",
+				"description": "Home Development Mutual Fund",
+				"employee_rate": 0.02,
+				"employer_rate": 0.02
+			}
+		],
+		"benefits_opt_in_options": {
+			"private_pension": {
+				"employee_rate": 0.03,
+				"employer_rate": 0.03
+			},
+			"health_insurance_top_up": {
+				"employee_fixed": 80,
+				"employer_fixed": 80
+			},
+			"rice_allowance": {
+				"employee_fixed": 1000,
+				"pre_tax": true
+			}
+		},
+		"tax_exemptions": {
+			"Pag-IBIG": {
+				"type": "percentage",
+				"rate": 0.02
+			}
+		}
+	},
+	"Ecuador": {
+		"currency": "USD",
+		"timezone": "America/Guayaquil",
+		"pay_frequency": "Monthly",
+		"income_tax_brackets": [
+			{
+				"up_to": 11722,
+				"rate": 0
+			},
+			{
+				"up_to": 14935,
+				"rate": 0.05
+			},
+			{
+				"up_to": 18657,
+				"rate": 0.1
+			},
+			{
+				"up_to": 22481,
+				"rate": 0.12
+			},
+			{
+				"up_to": 44742,
+				"rate": 0.15
+			},
+			{
+				"up_to": 67157,
+				"rate": 0.2
+			},
+			{
+				"up_to": 89471,
+				"rate": 0.25
+			},
+			{
+				"up_to": 113186,
+				"rate": 0.3
+			},
+			{
+				"up_to": null,
+				"rate": 0.35
+			}
+		],
+		"social_security": {
+			"employee_rate": 0.0945,
+			"employer_rate": 0.1125
+		},
+		"health_insurance": {
+			"employee_rate": 0,
+			"employer_rate": 0
+		},
+		"solidarity_fund_rate": 0,
+		"country_specific_benefits": [
+			{
+				"name": "IESS Pension",
+				"employee_rate": 0.0945,
+				"employer_rate": 0.1125
+			}
+		],
+		"benefits_opt_in_options": {
+			"transport_allowance": {
+				"employee_fixed": 100,
+				"pre_tax": true
+			}
+		},
+		"tax_exempt_allowances": [
+			"transport_allowance"
+		]
+	},
+	"Bolivia": {
+		"currency": "BOB",
+		"timezone": "America/La_Paz",
+		"pay_frequency": "Monthly",
+		"income_tax_brackets": [
+			{
+				"up_to": 13200,
+				"rate": 0
+			},
+			{
+				"up_to": 25000,
+				"rate": 0.13
+			},
+			{
+				"up_to": 100000,
+				"rate": 0.2
+			},
+			{
+				"up_to": null,
+				"rate": 0.25
+			}
+		],
+		"social_security": {
+			"employee_rate": 0.1271,
+			"employer_rate": 0.1651
+		},
+		"health_insurance": {
+			"employee_rate": 0,
+			"employer_rate": 0.1
+		},
+		"solidarity_fund_rate": 0.01,
+		"country_specific_benefits": [
+			{
+				"name": "AFP Contribution",
+				"employee_rate": 0.1025,
+				"employer_rate": 0
+			}
+		],
+		"benefits_opt_in_options": {
+			"meal_allowance": {
+				"employee_fixed": 150,
+				"employer_fixed": 0,
+				"pre_tax": true
+			}
+		},
+		"tax_exempt_allowances": [
+			"meal_allowance"
+		]
+	},
+  "Fiji": {
+  "currency": "FJD",
+  "currency_symbol": "$",
+  "timezone": "Pacific/Fiji",
+  "date_format": "DD/MM/YYYY",
+  "pay_frequency": "monthly",
+  "payroll_cutoff_day": 25,
+  "public_holidays": "API_INTEGRATED",
+
+  "income_tax_brackets": [
+    {
+      "up_to": 30030,
+      "rate": 0.0
+    },
+    {
+      "up_to": 50000,
+      "rate": 0.18
+    },
+    {
+      "up_to": 270000,
+      "rate": 0.20
+    },
+    {
+      "up_to": null,
+      "rate": 0.25
+    }
+  ],
+  "social_security_rate": 0.08,
+  "health_insurance_rate": 0.0,
+  "solidarity_fund_rate": 0.0,
+  "transport_allowance_threshold": 0,
+  "mandatory_bonuses": false,
+  "electronic_reporting_required": false,
+
+  "employer_contributions": {
+    "social_security_employer": 0.10,
+    "health_insurance_employer": 0.0,
+    "occupational_risk_employer": 0.0,
+    "family_compensation_fund": 0.0,
+    "icbf": 0.0,
+    "sena": 0.0
+  },
+  "country_specific_benefits": [
+    {
+      "name": "FNPF",
+      "description": "Fiji National Provident Fund - Retirement Savings",
+      "employee_rate": 0.08,
+      "employer_rate": 0.10
+    }
+  ],
+  "benefits_opt_in_options": {
+    "education_allowance": {
+      "employee_fixed": 100,
+      "pre_tax": false
+    },
+    "commuting_allowance": {
+      "employee_fixed": 50,
+      "pre_tax": true
+    },
+    "health_insurance_top_up": {
+      "employee_fixed": 75,
+      "employer_fixed": 75
+    }
+  },
+  "tax_exemptions": {
+    "FNPF": {
+      "type": "percentage",
+      "rate": 0.08
+    }
+  }
+}
+}

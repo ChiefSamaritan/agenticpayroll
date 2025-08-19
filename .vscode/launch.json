@@ -1,0 +1,18 @@
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Pytest",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "tests/test_bundle.py"
+      ],
+      "justMyCode": false,
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

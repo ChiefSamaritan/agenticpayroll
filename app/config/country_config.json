@@ -1,150 +1,239 @@
 {
+  "Solomon Islands": {
+    "currency": "SBD",
+    "currency_symbol": "$",
+    "timezone": "Pacific/Guadalcanal",
+    "date_format": "DD/MM/YYYY",
+    "pay_frequency": "monthly",
+    "payroll_cutoff_day": 25,
+    "public_holidays": "API_INTEGRATED",
+
+    "income_tax_brackets": [
+      { "up_to": 15600, "rate": 0.00 },
+      { "up_to": 30000, "rate": 0.11 },
+      { "up_to": 60000, "rate": 0.23 },
+      { "up_to": null,   "rate": 0.35 }
+    ],
+
+    "statutory": {
+      "employee_contributions": [
+        { "name": "NPF", "rate": 0.05,  "basis": "gross", "pre_tax": true }
+      ],
+      "employer_contributions": [
+        { "name": "NPF (Employer)", "rate": 0.075, "basis": "gross" }
+      ],
+      "other_employee_deductions": []
+    },
+
+	"optional_benefits": {
+      "private_health":          { "employee_fixed": 60,  "pre_tax": false, "basis": "amount" },
+      "dental":                  { "employee_fixed": 25,  "pre_tax": false, "basis": "amount" },
+      "vision":                  { "employee_fixed": 10,  "pre_tax": false, "basis": "amount" },
+      "group_life":              { "employee_rate": 0.005,"pre_tax": false, "basis": "gross" },
+      "disability":              { "employee_rate": 0.004,"pre_tax": false, "basis": "gross" },
+      "wellness":                { "employee_fixed": 15,  "pre_tax": false, "basis": "amount" },
+      "gym_membership":          { "employee_fixed": 20,  "pre_tax": false, "basis": "amount" },
+      "education_support":       { "employee_fixed": 40,  "pre_tax": false, "basis": "amount", "annual_limit": 480 },
+      "commuter_pre_tax":        { "employee_fixed": 40,  "pre_tax": true,  "basis": "amount", "annual_limit": 480 },
+      "internet_reimbursement":  { "employee_fixed": 30,  "pre_tax": false, "basis": "amount" },
+      "phone_stipend":           { "employee_fixed": 15,  "pre_tax": false, "basis": "amount" },
+      "charitable_payroll_giving": { "employee_fixed": 10,"pre_tax": false, "basis": "amount" }
+    },
+
+    "allowance_rules": {
+      "transport_subsidy": { "tax_treatment": "exempt",  "basis": "amount" },
+      "housing_allowance": { "tax_treatment": "taxable", "basis": "amount" },
+      "health_top_up":     { "tax_treatment": "taxable", "basis": "amount" }
+    }
+  },
+
+  "Papua New Guinea": {
+    "currency": "PGK",
+    "currency_symbol": "K",
+    "timezone": "Pacific/Port_Moresby",
+    "date_format": "DD/MM/YYYY",
+    "pay_frequency": "monthly",
+    "payroll_cutoff_day": 25,
+    "public_holidays": "API_INTEGRATED",
+
+    "income_tax_brackets": [
+      { "up_to": 12500, "rate": 0.00 },
+      { "up_to": 20000, "rate": 0.22 },
+      { "up_to": 33000, "rate": 0.30 },
+      { "up_to": 70000, "rate": 0.35 },
+      { "up_to": null,  "rate": 0.40 }
+    ],
+
+    "statutory": {
+      "employee_contributions": [
+        { "name": "NASFUND", "rate": 0.06, "basis": "gross", "pre_tax": true }
+      ],
+      "employer_contributions": [
+        { "name": "NASFUND (Employer)", "rate": 0.08, "basis": "gross" },
+        { "name": "Occupational Risk",  "rate": 0.01, "basis": "gross" }
+      ],
+      "other_employee_deductions": []
+    },
+
+    "optional_benefits": {
+      "private_health":         { "employee_fixed": 75,  "pre_tax": false, "basis": "amount" },
+      "dental":                 { "employee_fixed": 30,  "pre_tax": false, "basis": "amount" },
+      "vision":                 { "employee_fixed": 15,  "pre_tax": false, "basis": "amount" },
+      "group_life":             { "employee_rate": 0.006,"pre_tax": false, "basis": "gross" },
+      "disability":             { "employee_rate": 0.004,"pre_tax": false, "basis": "gross" },
+      "super_avc":              { "employee_rate": 0.03, "pre_tax": true,  "basis": "gross", "employer_match_rate": 0.01, "annual_limit": 12000 },
+      "education_support":      { "employee_fixed": 50,  "pre_tax": false, "basis": "amount" },
+      "commuter_pre_tax":       { "employee_fixed": 60,  "pre_tax": true,  "basis": "amount", "annual_limit": 720 },
+      "internet_reimbursement": { "employee_fixed": 30,  "pre_tax": false, "basis": "amount" },
+      "phone_stipend":          { "employee_fixed": 20,  "pre_tax": false, "basis": "amount" }
+    },
+
+    "allowance_rules": {
+      "commuting_allowance":     { "tax_treatment": "exempt",  "basis": "amount" },
+      "voluntary_health_cover":  { "tax_treatment": "taxable", "basis": "amount" },
+      "education_allowance":     { "tax_treatment": "taxable", "basis": "amount" }
+    }
+  },
+
+  "Fiji": {
+    "currency": "FJD",
+    "currency_symbol": "$",
+    "timezone": "Pacific/Fiji",
+    "date_format": "DD/MM/YYYY",
+    "pay_frequency": "monthly",
+    "payroll_cutoff_day": 25,
+    "public_holidays": "API_INTEGRATED",
+
+    "income_tax_brackets": [
+      { "up_to": 30030,  "rate": 0.00 },
+      { "up_to": 50000,  "rate": 0.18 },
+      { "up_to": 270000, "rate": 0.20 },
+      { "up_to": null,   "rate": 0.25 }
+    ],
+
+    "statutory": {
+      "employee_contributions": [
+        { "name": "FNPF", "rate": 0.08, "basis": "gross", "pre_tax": true }
+      ],
+      "employer_contributions": [
+        { "name": "FNPF (Employer)", "rate": 0.10, "basis": "gross" }
+      ],
+      "other_employee_deductions": []
+    },
+
+    "optional_benefits": {
+      "private_health":         { "employee_fixed": 75,  "pre_tax": false, "basis": "amount" },
+      "dental":                 { "employee_fixed": 25,  "pre_tax": false, "basis": "amount" },
+      "vision":                 { "employee_fixed": 10,  "pre_tax": false, "basis": "amount" },
+      "group_life":             { "employee_rate": 0.005,"pre_tax": false, "basis": "gross" },
+      "disability":             { "employee_rate": 0.004,"pre_tax": false, "basis": "gross" },
+      "fnpf_avc":               { "employee_rate": 0.03, "pre_tax": true,  "basis": "gross", "employer_match_rate": 0.01, "annual_limit": 15000 },
+      "commuter_pre_tax":       { "employee_fixed": 50,  "pre_tax": true,  "basis": "amount", "annual_limit": 600 },
+      "education_support":      { "employee_fixed": 60,  "pre_tax": false, "basis": "amount" },
+      "internet_reimbursement": { "employee_fixed": 30,  "pre_tax": false, "basis": "amount" }
+    },
+
+    "allowance_rules": {
+      "commuting_allowance":     { "tax_treatment": "exempt",  "basis": "amount" },
+      "education_allowance":     { "tax_treatment": "taxable", "basis": "amount" },
+      "health_insurance_top_up": { "tax_treatment": "taxable", "basis": "amount" }
+    }
+  },
+
   "Spain": {
     "currency": "EUR",
-    "currency_symbol": "\u20ac",
+    "currency_symbol": "€",
     "timezone": "Europe/Madrid",
     "date_format": "DD/MM/YYYY",
     "pay_frequency": "monthly",
     "payroll_cutoff_day": 25,
     "public_holidays": "API_INTEGRATED",
+
     "income_tax_brackets": [
-      {
-        "up_to": 12450,
-        "rate": 0.19
-      },
-      {
-        "up_to": 20200,
-        "rate": 0.24
-      },
-      {
-        "up_to": 35200,
-        "rate": 0.30
-      },
-      {
-        "up_to": 60000,
-        "rate": 0.37
-      },
-      {
-        "up_to": 300000,
-        "rate": 0.45
-      },
-      {
-        "up_to": null,
-        "rate": 0.47
-      }
+      { "up_to": 12450,  "rate": 0.19 },
+      { "up_to": 20200,  "rate": 0.24 },
+      { "up_to": 35200,  "rate": 0.30 },
+      { "up_to": 60000,  "rate": 0.37 },
+      { "up_to": 300000, "rate": 0.45 },
+      { "up_to": null,   "rate": 0.47 }
     ],
-    "social_security_rate": 0.0635,
-    "health_insurance_rate": 0.0,
-    "solidarity_fund_rate": 0.0,
-    "transport_allowance_threshold": 0,
-    "mandatory_bonuses": true,
-    "electronic_reporting_required": true,
-    "employer_contributions": {
-      "social_security_employer": 0.23,
-      "health_insurance_employer": 0.0,
-      "occupational_risk_employer": 0.02,
-      "family_compensation_fund": 0.0,
-      "icbf": 0.0,
-      "sena": 0.0
+
+    "statutory": {
+      "employee_contributions": [
+        { "name": "Social Security",       "rate": 0.0635, "basis": "gross", "pre_tax": true },
+        { "name": "Unemployment Insurance","rate": 0.0155, "basis": "gross", "pre_tax": true }
+      ],
+      "employer_contributions": [
+        { "name": "Social Security (Employer)", "rate": 0.23, "basis": "gross" },
+        { "name": "Occupational Risk",          "rate": 0.02, "basis": "gross" },
+        { "name": "Unemployment (Employer)",    "rate": 0.058,"basis": "gross" }
+      ],
+      "other_employee_deductions": []
     },
-    "country_specific_benefits": [
-      {
-        "name": "Unemployment Insurance",
-        "description": "Employer contribution for unemployment benefits",
-        "employer_rate": 0.058,
-        "employee_rate": 0.0155
-      }
-    ],
-    "benefits_opt_in_options": {
-      "private_pension": {
-        "employee_rate": 0.02,
-        "employer_rate": 0.02
-      },
-      "health_insurance_top_up": {
-        "employee_fixed": 90,
-        "employer_fixed": 90
-      },
-      "gym_membership": {
-        "employee_fixed": 30,
-        "pre_tax": false
-      },
-      "commuting_allowance": {
-        "employee_fixed": 50,
-        "pre_tax": true
-      }
+	"optional_benefits": {
+		"private_health":         { "employee_fixed": 90,  "pre_tax": false, "basis": "amount" },
+		"dental":                 { "employee_fixed": 20,  "pre_tax": false, "basis": "amount" },
+		"vision":                 { "employee_fixed": 10,  "pre_tax": false, "basis": "amount" },
+		"meal_vouchers":          { "employee_fixed": 100, "pre_tax": true,  "basis": "amount", "annual_limit": 2200 },
+		"transport_card":         { "employee_fixed": 60,  "pre_tax": true,  "basis": "amount", "annual_limit": 1500 },
+		"gym_membership":         { "employee_fixed": 25,  "pre_tax": false, "basis": "amount" },
+		"supplemental_pension":   { "employee_rate": 0.02, "pre_tax": true,  "basis": "gross", "employer_match_rate": 0.02, "annual_limit": 1500 },
+		"group_life":             { "employee_rate": 0.004,"pre_tax": false, "basis": "gross" },
+		"disability":             { "employee_rate": 0.003,"pre_tax": false, "basis": "gross" },
+		"childcare_vouchers":     { "employee_fixed": 120, "pre_tax": true,  "basis": "amount", "annual_limit": 3000 },
+		"internet_reimbursement": { "employee_fixed": 25,  "pre_tax": false, "basis": "amount" }
     },
-    "tax_exemptions": {
-      "Unemployment Insurance": {
-        "type": "percentage",
-        "rate": 0.0155
-      }
+
+    "allowance_rules": {
+      "commuting_allowance":        { "tax_treatment": "exempt",  "basis": "amount" },
+      "health_insurance_top_up":    { "tax_treatment": "taxable", "basis": "amount" },
+      "gym_membership":             { "tax_treatment": "taxable", "basis": "amount" }
     }
   },
+
   "Ireland": {
     "currency": "EUR",
-    "currency_symbol": "\u20ac",
+    "currency_symbol": "€",
     "timezone": "Europe/Dublin",
     "date_format": "DD/MM/YYYY",
     "pay_frequency": "monthly",
     "payroll_cutoff_day": 20,
     "public_holidays": "API_INTEGRATED",
+
     "income_tax_brackets": [
-      {
-        "up_to": 0,
-        "rate": 0.2
-      },
-      {
-        "up_to": 36800,
-        "rate": 0.4
-      }
+      { "up_to": 0,     "rate": 0.20 },
+      { "up_to": 36800, "rate": 0.40 }
     ],
-    "social_security_rate": 0.04,
-    "health_insurance_rate": 0.0,
-    "solidarity_fund_rate": 0.0,
-    "transport_allowance_threshold": 0,
-    "mandatory_bonuses": false,
-    "electronic_reporting_required": true,
-    "employer_contributions": {
-      "social_security_employer": 0.1125,
-      "health_insurance_employer": 0.0,
-      "occupational_risk_employer": 0.0,
-      "family_compensation_fund": 0.0,
-      "icbf": 0.0,
-      "sena": 0.0
+
+    "statutory": {
+      "employee_contributions": [
+        { "name": "PRSI", "rate": 0.04,  "basis": "gross", "pre_tax": true }
+      ],
+      "employer_contributions": [
+        { "name": "PRSI (Employer)", "rate": 0.1125, "basis": "gross" }
+      ],
+      "other_employee_deductions": []
     },
-    "country_specific_benefits": [
-      {
-        "name": "PRSI",
-        "description": "Pay Related Social Insurance",
-        "employee_rate": 0.04,
-        "employer_rate": 0.1125
-      }
-    ],
-    "benefits_opt_in_options": {
-      "private_pension": {
-        "employee_rate": 0.02,
-        "employer_rate": 0.02
-      },
-      "health_insurance_top_up": {
-        "employee_fixed": 90,
-        "employer_fixed": 90
-      },
-      "commuting_allowance": {
-        "employee_fixed": 60,
-        "pre_tax": true
-      },
-      "union_dues": {
-        "employee_fixed": 15,
-        "pre_tax": false
-      }
+
+    "optional_benefits": {
+      "private_health":        { "employee_fixed": 90,  "pre_tax": false, "basis": "amount" },
+      "dental":                { "employee_fixed": 25,  "pre_tax": false, "basis": "amount" },
+      "vision":                { "employee_fixed": 10,  "pre_tax": false, "basis": "amount" },
+      "prsa":                  { "employee_rate": 0.03, "pre_tax": true,  "basis": "gross", "employer_match_rate": 0.03, "annual_limit": 20000 },
+      "bike_to_work":          { "employee_fixed": 75,  "pre_tax": true,  "basis": "amount", "annual_limit": 1250 },
+      "commuter_taxsaver":     { "employee_fixed": 70,  "pre_tax": true,  "basis": "amount", "annual_limit": 2000 },
+      "gym_membership":        { "employee_fixed": 20,  "pre_tax": false, "basis": "amount" },
+      "wellness":              { "employee_fixed": 15,  "pre_tax": false, "basis": "amount" },
+      "charitable_payroll_giving": { "employee_fixed": 10, "pre_tax": false, "basis": "amount" }
     },
-    "tax_exemptions": {
-      "PRSI": {
-        "type": "percentage",
-        "rate": 0.04
-      }
+
+    "allowance_rules": {
+      "commuting_allowance":  { "tax_treatment": "exempt",  "basis": "amount" },
+      "union_dues":           { "tax_treatment": "taxable", "basis": "amount" },
+      "health_insurance_top_up": { "tax_treatment": "taxable", "basis": "amount" }
     }
   },
+
   "USA": {
     "currency": "USD",
     "currency_symbol": "$",
@@ -153,101 +242,58 @@
     "pay_frequency": "bi-weekly",
     "payroll_cutoff_day": 15,
     "public_holidays": "API_INTEGRATED",
+
     "income_tax_brackets": [
-      {
-        "up_to": 0,
-        "rate": 0.1
-      },
-      {
-        "up_to": 11000,
-        "rate": 0.12
-      },
-      {
-        "up_to": 44725,
-        "rate": 0.22
-      },
-      {
-        "up_to": 95375,
-        "rate": 0.24
-      },
-      {
-        "up_to": 182100,
-        "rate": 0.32
-      },
-      {
-        "up_to": 231250,
-        "rate": 0.35
-      },
-      {
-        "up_to": 578125,
-        "rate": 0.37
-      }
+      { "up_to": 0,      "rate": 0.10 },
+      { "up_to": 11000,  "rate": 0.12 },
+      { "up_to": 44725,  "rate": 0.22 },
+      { "up_to": 95375,  "rate": 0.24 },
+      { "up_to": 182100, "rate": 0.32 },
+      { "up_to": 231250, "rate": 0.35 },
+      { "up_to": 578125, "rate": 0.37 }
     ],
-    "social_security_rate": 0.062,
-    "health_insurance_rate": 0.0145,
-    "solidarity_fund_rate": 0.0,
-    "transport_allowance_threshold": 0,
-    "mandatory_bonuses": false,
-    "electronic_reporting_required": false,
-    "employer_contributions": {
-      "social_security_employer": 0.062,
-      "health_insurance_employer": 0.0145,
-      "occupational_risk_employer": 0.0,
-      "family_compensation_fund": 0.0,
-      "icbf": 0.0,
-      "sena": 0.0
+
+    "statutory": {
+      "employee_contributions": [
+        { "name": "Social Security (FICA)", "rate": 0.062,  "basis": "gross", "pre_tax": false },
+        { "name": "Medicare",               "rate": 0.0145, "basis": "gross", "pre_tax": false }
+      ],
+      "employer_contributions": [
+        { "name": "Social Security (Employer)", "rate": 0.062, "basis": "gross" },
+        { "name": "Medicare (Employer)",        "rate": 0.0145,"basis": "gross" },
+        { "name": "FUTA",                       "rate": 0.006, "basis": "gross" },
+        { "name": "SUTA",                       "rate": 0.05,  "basis": "gross" }
+      ],
+      "other_employee_deductions": [
+        { "name": "401k", "rate": 0.05, "basis": "gross", "pre_tax": true },
+        { "name": "HSA",  "amount": 3000, "basis": "annual", "pre_tax": true }
+      ]
     },
-    "country_specific_benefits": [
-      {
-        "name": "Medicare",
-        "description": "Federal health insurance program",
-        "employee_rate": 0.0145,
-        "employer_rate": 0.0145
-      },
-      {
-        "name": "FUTA",
-        "description": "Federal Unemployment Tax Act",
-        "employer_rate": 0.006
-      },
-      {
-        "name": "SUTA",
-        "description": "State Unemployment Tax Act",
-        "employer_rate": 0.05
-      }
-    ],
-    "benefits_opt_in_options": {
-      "private_pension": {
-        "employee_rate": 0.03,
-        "employer_rate": 0.03
-      },
-      "health_insurance_top_up": {
-        "employee_fixed": 100,
-        "employer_fixed": 100
-      },
-      "401k": {
-        "employee_rate": 0.05,
-        "pre_tax": true
-      },
-      "HSA": {
-        "employee_fixed": 250,
-        "pre_tax": true
-      },
-      "commuting_allowance": {
-        "employee_fixed": 75,
-        "pre_tax": true
-      }
+
+    "optional_benefits": {
+      "401k":                  { "employee_rate": 0.05, "pre_tax": true,  "basis": "gross", "employer_match_rate": 0.03, "annual_limit": 23000 },
+      "roth_401k":             { "employee_rate": 0.03, "pre_tax": false, "basis": "gross", "employer_match_rate": 0.00, "annual_limit": 23000 },
+      "hsa":                   { "employee_fixed": 250, "pre_tax": true,  "basis": "amount", "annual_limit": 4150 },
+      "fsa_health":            { "employee_fixed": 225, "pre_tax": true,  "basis": "amount", "annual_limit": 3250 },
+      "fsa_dependent_care":    { "employee_fixed": 300, "pre_tax": true,  "basis": "amount", "annual_limit": 5000 },
+      "commuter_transit":      { "employee_fixed": 100, "pre_tax": true,  "basis": "amount", "annual_limit": 3150 },
+      "commuter_parking":      { "employee_fixed": 100, "pre_tax": true,  "basis": "amount", "annual_limit": 3150 },
+      "medical_premium_topup": { "employee_fixed": 100, "pre_tax": false, "basis": "amount" },
+      "dental":                { "employee_fixed": 25,  "pre_tax": false, "basis": "amount" },
+      "vision":                { "employee_fixed": 10,  "pre_tax": false, "basis": "amount" },
+      "group_life":            { "employee_rate": 0.004,"pre_tax": false, "basis": "gross" },
+      "std_ltd":               { "employee_rate": 0.003,"pre_tax": false, "basis": "gross" },
+      "espp":                  { "employee_rate": 0.02, "pre_tax": false, "basis": "gross", "annual_limit": 25000 },
+      "wellness":              { "employee_fixed": 20,  "pre_tax": false, "basis": "amount" },
+      "gym_membership":        { "employee_fixed": 25,  "pre_tax": false, "basis": "amount" }
     },
-    "tax_exemptions": {
-      "401k": {
-        "type": "percentage",
-        "rate": 0.05
-      },
-      "HSA": {
-        "type": "fixed",
-        "amount": 3000
-      }
+
+    "allowance_rules": {
+      "commuting_allowance":     { "tax_treatment": "exempt",  "basis": "amount" },
+      "health_insurance_top_up": { "tax_treatment": "taxable", "basis": "amount" }
     }
   },
+
   "Colombia": {
     "currency": "COP",
     "currency_symbol": "$",
@@ -256,60 +302,47 @@
     "pay_frequency": "monthly",
     "payroll_cutoff_day": 25,
     "public_holidays": "API_INTEGRATED",
+
     "income_tax_brackets": [
-      {
-        "up_to": 0,
-        "rate": 0.0
-      },
-      {
-        "up_to": 4100000,
-        "rate": 0.19
-      },
-      {
-        "up_to": 8000000,
-        "rate": 0.28
-      },
-      {
-        "up_to": 18000000,
-        "rate": 0.33
-      }
+      { "up_to": 0,        "rate": 0.00 },
+      { "up_to": 4100000,  "rate": 0.19 },
+      { "up_to": 8000000,  "rate": 0.28 },
+      { "up_to": 18000000, "rate": 0.33 },
+      { "up_to": null,     "rate": 0.33 }
     ],
-    "social_security_rate": 0.04,
-    "health_insurance_rate": 0.04,
-    "solidarity_fund_rate": 0.01,
-    "transport_allowance_threshold": 2600000,
-    "mandatory_bonuses": true,
-    "electronic_reporting_required": true,
-    "employer_contributions": {
-      "social_security_employer": 0.12,
-      "health_insurance_employer": 0.085,
-      "occupational_risk_employer": 0.00522,
-      "family_compensation_fund": 0.04,
-      "icbf": 0.03,
-      "sena": 0.02
+
+    "statutory": {
+      "employee_contributions": [
+        { "name": "Pension",      "rate": 0.04,  "basis": "gross", "pre_tax": true },
+        { "name": "Health",       "rate": 0.04,  "basis": "gross", "pre_tax": true },
+        { "name": "Solidarity",   "rate": 0.01,  "basis": "gross", "pre_tax": true }
+      ],
+      "employer_contributions": [
+        { "name": "Pension (Employer)",     "rate": 0.12,   "basis": "gross" },
+        { "name": "Health (Employer)",      "rate": 0.085,  "basis": "gross" },
+        { "name": "Occupational Risk",      "rate": 0.00522,"basis": "gross" },
+        { "name": "Family Comp. Fund",      "rate": 0.04,   "basis": "gross" },
+        { "name": "ICBF",                   "rate": 0.03,   "basis": "gross" },
+        { "name": "SENA",                   "rate": 0.02,   "basis": "gross" }
+      ],
+      "other_employee_deductions": []
     },
-    "country_specific_benefits": [],
-    "benefits_opt_in_options": {
-      "private_pension": {
-        "employee_rate": 0.02,
-        "employer_rate": 0.02
-      },
-      "health_insurance_top_up": {
-        "employee_fixed": 100000,
-        "employer_fixed": 100000
-      },
-      "commuting_allowance": {
-        "employee_fixed": 80000,
-        "pre_tax": true
-      }
+
+    "optional_benefits": {
+      "private_health":        { "employee_fixed": 100000, "pre_tax": false, "basis": "amount" },
+      "dental":                { "employee_fixed": 30000,  "pre_tax": false, "basis": "amount" },
+      "vision":                { "employee_fixed": 15000,  "pre_tax": false, "basis": "amount" },
+      "voluntary_pension":     { "employee_rate": 0.03,    "pre_tax": true,  "basis": "gross", "employer_match_rate": 0.02, "annual_limit": 36000000 },
+      "commuter_pre_tax":      { "employee_fixed": 80000,  "pre_tax": true,  "basis": "amount", "annual_limit": 960000 },
+      "internet_reimbursement":{ "employee_fixed": 60000,  "pre_tax": false, "basis": "amount" },
+      "meal_vouchers":         { "employee_fixed": 120000, "pre_tax": true,  "basis": "amount", "annual_limit": 1440000 }
     },
-    "tax_exemptions": {
-      "Solidarity Fund": {
-        "type": "percentage",
-        "rate": 0.01
-      }
+
+    "allowance_rules": {
+      "transport": { "tax_treatment": "exempt_above_threshold", "basis": "amount", "threshold": 2600000 }
     }
   },
+
   "Canada": {
     "currency": "CAD",
     "currency_symbol": "$",
@@ -318,309 +351,235 @@
     "pay_frequency": "bi-weekly",
     "payroll_cutoff_day": 15,
     "public_holidays": "API_INTEGRATED",
+
     "income_tax_brackets": [
-      {
-        "up_to": 0,
-        "rate": 0.15
-      },
-      {
-        "up_to": 53359,
-        "rate": 0.205
-      },
-      {
-        "up_to": 106717,
-        "rate": 0.26
-      },
-      {
-        "up_to": 165430,
-        "rate": 0.29
-      }
+      { "up_to": 0,      "rate": 0.15 },
+      { "up_to": 53359,  "rate": 0.205 },
+      { "up_to": 106717, "rate": 0.26 },
+      { "up_to": 165430, "rate": 0.29 },
+      { "up_to": null,   "rate": 0.29 }
     ],
-    "social_security_rate": 0.0545,
-    "health_insurance_rate": 0.0,
-    "solidarity_fund_rate": 0.0,
-    "transport_allowance_threshold": 0,
-    "mandatory_bonuses": false,
-    "electronic_reporting_required": true,
-    "employer_contributions": {
-      "social_security_employer": 0.0545,
-      "health_insurance_employer": 0.0,
-      "occupational_risk_employer": 0.0145,
-      "family_compensation_fund": 0.0,
-      "icbf": 0.0,
-      "sena": 0.0
+
+    "statutory": {
+      "employee_contributions": [
+        { "name": "CPP", "rate": 0.0595, "basis": "gross", "pre_tax": false },
+        { "name": "EI",  "rate": 0.0163, "basis": "gross", "pre_tax": false }
+      ],
+      "employer_contributions": [
+        { "name": "CPP (Employer)", "rate": 0.0595, "basis": "gross" },
+        { "name": "EI (Employer)",  "rate": 0.0228, "basis": "gross" },
+        { "name": "Occupational Risk", "rate": 0.0145, "basis": "gross" }
+      ],
+      "other_employee_deductions": [
+        { "name": "RRSP", "rate": 0.04, "basis": "gross", "pre_tax": true }
+      ]
     },
-    "country_specific_benefits": [
-      {
-        "name": "CPP",
-        "description": "Canada Pension Plan",
-        "employee_rate": 0.0595,
-        "employer_rate": 0.0595
-      },
-      {
-        "name": "EI",
-        "description": "Employment Insurance",
-        "employee_rate": 0.0163,
-        "employer_rate": 0.0228
-      }
-    ],
-    "benefits_opt_in_options": {
-      "private_pension": {
-        "employee_rate": 0.03,
-        "employer_rate": 0.03
-      },
-      "health_insurance_top_up": {
-        "employee_fixed": 100,
-        "employer_fixed": 100
-      },
-      "RRSP": {
-        "employee_rate": 0.04,
-        "pre_tax": true
-      },
-      "union_dues": {
-        "employee_fixed": 20,
-        "pre_tax": false
-      }
+
+    "optional_benefits": {
+      "rrsp":                  { "employee_rate": 0.04, "pre_tax": true,  "basis": "gross", "employer_match_rate": 0.03, "annual_limit": 31000 },
+      "tfsa_payroll":          { "employee_fixed": 200, "pre_tax": false, "basis": "amount", "annual_limit": 7000 },
+      "private_health":        { "employee_fixed": 100,"pre_tax": false, "basis": "amount" },
+      "dental":                { "employee_fixed": 25, "pre_tax": false, "basis": "amount" },
+      "vision":                { "employee_fixed": 10, "pre_tax": false, "basis": "amount" },
+      "commuter_transit":      { "employee_fixed": 90, "pre_tax": true,  "basis": "amount", "annual_limit": 1080 },
+      "internet_reimbursement":{ "employee_fixed": 40, "pre_tax": false, "basis": "amount" },
+      "phone_stipend":         { "employee_fixed": 20, "pre_tax": false, "basis": "amount" },
+      "wellness":              { "employee_fixed": 20, "pre_tax": false, "basis": "amount" },
+      "gym_membership":        { "employee_fixed": 25, "pre_tax": false, "basis": "amount" },
+      "espp":                  { "employee_rate": 0.02, "pre_tax": false, "basis": "gross", "annual_limit": 25000 }
     },
-    "tax_exemptions": {
-      "CPP": {
-        "type": "percentage",
-        "rate": 0.0595
-      },
-      "EI": {
-        "type": "percentage",
-        "rate": 0.0163
-      }
+
+    "allowance_rules": {
+      "internet_reimbursement":             { "tax_treatment": "exempt",  "basis": "amount" },
+      "professional_development_allowance": { "tax_treatment": "exempt",  "basis": "amount" },
+      "union_dues":                         { "tax_treatment": "taxable", "basis": "amount" }
     }
   },
+
   "India": {
     "currency": "INR",
-    "currency_symbol": "\u20b9",
+    "currency_symbol": "₹",
     "timezone": "Asia/Kolkata",
     "date_format": "DD-MM-YYYY",
     "pay_frequency": "monthly",
     "payroll_cutoff_day": 25,
     "public_holidays": "API_INTEGRATED",
+
     "income_tax_brackets": [
-      {
-        "up_to": 0,
-        "rate": 0.05
-      },
-      {
-        "up_to": 500000,
-        "rate": 0.1
-      },
-      {
-        "up_to": 1000000,
-        "rate": 0.2
-      },
-      {
-        "up_to": 1500000,
-        "rate": 0.3
-      }
+      { "up_to": 0,       "rate": 0.05 },
+      { "up_to": 500000,  "rate": 0.10 },
+      { "up_to": 1000000, "rate": 0.20 },
+      { "up_to": 1500000, "rate": 0.30 },
+      { "up_to": null,    "rate": 0.30 }
     ],
-    "social_security_rate": 0.12,
-    "health_insurance_rate": 0.0,
-    "solidarity_fund_rate": 0.0,
-    "transport_allowance_threshold": 0,
-    "mandatory_bonuses": true,
-    "electronic_reporting_required": true,
-    "employer_contributions": {
-      "social_security_employer": 0.1275,
-      "health_insurance_employer": 0.0,
-      "occupational_risk_employer": 0.0,
-      "family_compensation_fund": 0.0,
-      "icbf": 0.0,
-      "sena": 0.0
+
+    "statutory": {
+      "employee_contributions": [
+        { "name": "EPF", "rate": 0.12, "basis": "gross", "pre_tax": true }
+      ],
+      "employer_contributions": [
+        { "name": "EPF (Employer)", "rate": 0.12, "basis": "gross" }
+      ],
+      "other_employee_deductions": [
+        { "name": "NPS", "rate": 0.10, "basis": "gross", "pre_tax": true }
+      ]
     },
-    "country_specific_benefits": [
-      {
-        "name": "HRA",
-        "description": "House Rent Allowance",
-        "eligible": true,
-        "exemption_rule": "Based on salary and city of residence"
-      },
-      {
-        "name": "EPF",
-        "description": "Employee Provident Fund",
-        "employee_rate": 0.12,
-        "employer_rate": 0.12
-      }
-    ],
-    "benefits_opt_in_options": {
-      "private_pension": {
-        "employee_rate": 0.04,
-        "employer_rate": 0.04
-      },
-      "health_insurance_top_up": {
-        "employee_fixed": 75,
-        "employer_fixed": 75
-      },
-      "meal_subsidy": {
-        "employee_fixed": 50,
-        "pre_tax": false
-      },
-      "NPS": {
-        "employee_rate": 0.1,
-        "pre_tax": true
-      }
+
+	"optional_benefits": {
+      "nps_voluntary":         { "employee_rate": 0.05, "pre_tax": true,  "basis": "gross", "employer_match_rate": 0.05, "annual_limit": 500000 },
+      "meal_card":             { "employee_fixed": 2200,"pre_tax": true,  "basis": "amount", "annual_limit": 26400 },
+      "private_health":        { "employee_fixed": 75,  "pre_tax": false, "basis": "amount" },
+      "dental":                { "employee_fixed": 20,  "pre_tax": false, "basis": "amount" },
+      "vision":                { "employee_fixed": 10,  "pre_tax": false, "basis": "amount" },
+      "education_support":     { "employee_fixed": 2000,"pre_tax": false, "basis": "amount" },
+      "internet_reimbursement":{ "employee_fixed": 1000,"pre_tax": false, "basis": "amount" },
+      "phone_stipend":         { "employee_fixed": 500, "pre_tax": false, "basis": "amount" },
+      "commuter_pre_tax":      { "employee_fixed": 1500,"pre_tax": true,  "basis": "amount", "annual_limit": 18000 }
     },
-    "tax_exemptions": {
-      "HRA": {
-        "type": "fixed",
-        "amount": 50000
-      },
-      "EPF": {
-        "type": "percentage",
-        "rate": 0.12
-      }
+
+    "allowance_rules": {
+      "HRA":            { "tax_treatment": "conditionally_exempt", "basis": "amount" },
+      "meal_subsidy":   { "tax_treatment": "taxable",              "basis": "amount" },
+      "health_insurance_top_up": { "tax_treatment": "taxable",      "basis": "amount" }
     }
   },
+
   "Philippines": {
     "currency": "PHP",
-    "currency_symbol": "\u20b1",
+    "currency_symbol": "₱",
     "timezone": "Asia/Manila",
     "date_format": "MM/DD/YYYY",
     "pay_frequency": "semi-monthly",
     "payroll_cutoff_day": 15,
     "public_holidays": "API_INTEGRATED",
+
     "income_tax_brackets": [
-      {
-        "up_to": 0,
-        "rate": 0.0
-      },
-      {
-        "up_to": 250000,
-        "rate": 0.2
-      },
-      {
-        "up_to": 400000,
-        "rate": 0.25
-      },
-      {
-        "up_to": 800000,
-        "rate": 0.3
-      },
-      {
-        "up_to": 2000000,
-        "rate": 0.32
-      }
+      { "up_to": 0,       "rate": 0.00 },
+      { "up_to": 250000,  "rate": 0.20 },
+      { "up_to": 400000,  "rate": 0.25 },
+      { "up_to": 800000,  "rate": 0.30 },
+      { "up_to": 2000000, "rate": 0.32 },
+      { "up_to": null,    "rate": 0.32 }
     ],
-    "social_security_rate": 0.045,
-    "health_insurance_rate": 0.04,
-    "solidarity_fund_rate": 0.0,
-    "transport_allowance_threshold": 0,
-    "mandatory_bonuses": true,
-    "electronic_reporting_required": true,
-    "employer_contributions": {
-      "social_security_employer": 0.08,
-      "health_insurance_employer": 0.04,
-      "occupational_risk_employer": 0.002,
-      "family_compensation_fund": 0.0,
-      "icbf": 0.0,
-      "sena": 0.0
+
+    "statutory": {
+      "employee_contributions": [
+        { "name": "SSS",       "rate": 0.045, "basis": "gross", "pre_tax": true },
+        { "name": "PhilHealth","rate": 0.04,  "basis": "gross", "pre_tax": true },
+        { "name": "Pag-IBIG",  "rate": 0.02,  "basis": "gross", "pre_tax": true }
+      ],
+      "employer_contributions": [
+        { "name": "SSS (Employer)",      "rate": 0.08,  "basis": "gross" },
+        { "name": "PhilHealth (Employer)","rate": 0.04,  "basis": "gross" },
+        { "name": "Pag-IBIG (Employer)", "rate": 0.02,  "basis": "gross" },
+        { "name": "Occupational Risk",   "rate": 0.002, "basis": "gross" }
+      ],
+      "other_employee_deductions": []
     },
-    "country_specific_benefits": [
-      {
-        "name": "Pag-IBIG",
-        "description": "Home Development Mutual Fund",
-        "employee_rate": 0.02,
-        "employer_rate": 0.02
-      }
-    ],
-    "benefits_opt_in_options": {
-      "private_pension": {
-        "employee_rate": 0.03,
-        "employer_rate": 0.03
-      },
-      "health_insurance_top_up": {
-        "employee_fixed": 80,
-        "employer_fixed": 80
-      },
-      "rice_allowance": {
-        "employee_fixed": 1000,
-        "pre_tax": true
-      }
+
+	"optional_benefits": {
+      "hmo_top_up":            { "employee_fixed": 80,    "pre_tax": false, "basis": "amount" },
+      "dental":                { "employee_fixed": 25,    "pre_tax": false, "basis": "amount" },
+      "vision":                { "employee_fixed": 10,    "pre_tax": false, "basis": "amount" },
+      "group_life":            { "employee_rate": 0.004,  "pre_tax": false, "basis": "gross" },
+      "disability":            { "employee_rate": 0.003,  "pre_tax": false, "basis": "gross" },
+      "voluntary_pension":     { "employee_rate": 0.03,   "pre_tax": true,  "basis": "gross", "employer_match_rate": 0.02, "annual_limit": 600000 },
+      "rice_allowance_opt_in": { "employee_fixed": 1000,  "pre_tax": true,  "basis": "amount", "annual_limit": 12000 },
+      "commuter_pre_tax":      { "employee_fixed": 800,   "pre_tax": true,  "basis": "amount", "annual_limit": 9600 },
+      "internet_reimbursement":{ "employee_fixed": 500,   "pre_tax": false, "basis": "amount" }
     },
-    "tax_exemptions": {
-      "Pag-IBIG": {
-        "type": "percentage",
-        "rate": 0.02
-      }
+
+    "allowance_rules": {
+      "rice_allowance": { "tax_treatment": "exempt",  "basis": "amount" },
+      "transport":      { "tax_treatment": "exempt",  "basis": "amount" }
     }
   },
+
   "Ecuador": {
-  "currency": "USD",
-  "timezone": "America/Guayaquil",
-  "pay_frequency": "Monthly",
-  "income_tax_brackets": [
-    { "up_to": 11722, "rate": 0.0 },
-    { "up_to": 14935, "rate": 0.05 },
-    { "up_to": 18657, "rate": 0.10 },
-    { "up_to": 22481, "rate": 0.12 },
-    { "up_to": 44742, "rate": 0.15 },
-    { "up_to": 67157, "rate": 0.20 },
-    { "up_to": 89471, "rate": 0.25 },
-    { "up_to": 113186, "rate": 0.30 },
-    { "up_to": null, "rate": 0.35 }
-  ],
-  "social_security": {
-    "employee_rate": 0.0945,
-    "employer_rate": 0.1125
-  },
-  "health_insurance": {
-    "employee_rate": 0.0,
-    "employer_rate": 0.0
-  },
-  "solidarity_fund_rate": 0.0,
-  "country_specific_benefits": [
-    {
-      "name": "IESS Pension",
-      "employee_rate": 0.0945,
-      "employer_rate": 0.1125
+    "currency": "USD",
+    "currency_symbol": "$",
+    "timezone": "America/Guayaquil",
+    "date_format": "DD/MM/YYYY",
+    "pay_frequency": "monthly",
+    "public_holidays": "API_INTEGRATED",
+
+    "income_tax_brackets": [
+      { "up_to": 11722,  "rate": 0.00 },
+      { "up_to": 14935,  "rate": 0.05 },
+      { "up_to": 18657,  "rate": 0.10 },
+      { "up_to": 22481,  "rate": 0.12 },
+      { "up_to": 44742,  "rate": 0.15 },
+      { "up_to": 67157,  "rate": 0.20 },
+      { "up_to": 89471,  "rate": 0.25 },
+      { "up_to": 113186, "rate": 0.30 },
+      { "up_to": null,   "rate": 0.35 }
+    ],
+
+    "statutory": {
+      "employee_contributions": [
+        { "name": "IESS Pension", "rate": 0.0945, "basis": "gross", "pre_tax": true }
+      ],
+      "employer_contributions": [
+        { "name": "IESS Pension (Employer)", "rate": 0.1125, "basis": "gross" }
+      ],
+      "other_employee_deductions": []
+    },
+
+    "optional_benefits": {
+      "private_health":        { "employee_fixed": 90,  "pre_tax": false, "basis": "amount" },
+      "dental":                { "employee_fixed": 25,  "pre_tax": false, "basis": "amount" },
+      "vision":                { "employee_fixed": 10,  "pre_tax": false, "basis": "amount" },
+      "voluntary_pension":     { "employee_rate": 0.03, "pre_tax": true,  "basis": "gross", "employer_match_rate": 0.02, "annual_limit": 12000 },
+      "transport_card":        { "employee_fixed": 100, "pre_tax": true,  "basis": "amount", "annual_limit": 1200 },
+      "meal_vouchers":         { "employee_fixed": 120, "pre_tax": true,  "basis": "amount", "annual_limit": 1440 },
+      "internet_reimbursement":{ "employee_fixed": 30,  "pre_tax": false, "basis": "amount" }
+    },
+
+    "allowance_rules": {
+      "transport_allowance": { "tax_treatment": "exempt", "basis": "amount" }
     }
-  ],
-  "benefits_opt_in_options": {
-    "transport_allowance": {
-      "employee_fixed": 100,
-      "pre_tax": true
-    }
   },
-  "tax_exempt_allowances": ["transport_allowance"]
-  },
+
   "Bolivia": {
     "currency": "BOB",
+    "currency_symbol": "Bs",
     "timezone": "America/La_Paz",
-    "pay_frequency": "Monthly",
+    "date_format": "DD/MM/YYYY",
+    "pay_frequency": "monthly",
+    "public_holidays": "API_INTEGRATED",
+
     "income_tax_brackets": [
-      { "up_to": 13200, "rate": 0.0 },
-      { "up_to": 25000, "rate": 0.13 },
+      { "up_to": 13200,  "rate": 0.00 },
+      { "up_to": 25000,  "rate": 0.13 },
       { "up_to": 100000, "rate": 0.20 },
-      { "up_to": null, "rate": 0.25 }
+      { "up_to": null,   "rate": 0.25 }
     ],
-    "social_security": {
-      "employee_rate": 0.1271,
-      "employer_rate": 0.1651
+
+    "statutory": {
+      "employee_contributions": [
+        { "name": "Social Security",  "rate": 0.1271, "basis": "gross", "pre_tax": true },
+        { "name": "Solidarity Fund",  "rate": 0.01,   "basis": "gross", "pre_tax": true }
+      ],
+      "employer_contributions": [
+        { "name": "Social Security (Employer)", "rate": 0.1651, "basis": "gross" },
+        { "name": "Health Insurance (Employer)","rate": 0.10,   "basis": "gross" }
+      ],
+      "other_employee_deductions": []
     },
-    "health_insurance": {
-      "employee_rate": 0.0,
-      "employer_rate": 0.10
+	
+    "optional_benefits": {
+      "private_health":        { "employee_fixed": 80,   "pre_tax": false, "basis": "amount" },
+      "dental":                { "employee_fixed": 25,   "pre_tax": false, "basis": "amount" },
+      "vision":                { "employee_fixed": 10,   "pre_tax": false, "basis": "amount" },
+      "afp_voluntary":         { "employee_rate": 0.03,  "pre_tax": true,  "basis": "gross", "employer_match_rate": 0.00, "annual_limit": 10000 },
+      "meal_vouchers":         { "employee_fixed": 150,  "pre_tax": true,  "basis": "amount", "annual_limit": 1800 },
+      "commuter_pre_tax":      { "employee_fixed": 120,  "pre_tax": true,  "basis": "amount", "annual_limit": 1440 },
+      "internet_reimbursement":{ "employee_fixed": 40,   "pre_tax": false, "basis": "amount" },
+      "phone_stipend":         { "employee_fixed": 20,   "pre_tax": false, "basis": "amount" }
     },
-    "solidarity_fund_rate": 0.01,
-    "country_specific_benefits": [
-      {
-        "name": "AFP Contribution",
-        "employee_rate": 0.1025,
-        "employer_rate": 0.0
-      }
-    ],
-    "benefits_opt_in_options": {
-      "meal_allowance": {
-        "employee_fixed": 150,
-        "employer_fixed": 0,
-        "pre_tax": true
-      }
-    },
-    "tax_exempt_allowances": ["meal_allowance"]
+
+    "allowance_rules": {
+      "meal_allowance": { "tax_treatment": "exempt",  "basis": "amount" }
+    }
   }
 }
